@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Blog - Bootstrap Layout</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-journal-richtext me-2"></i>ModernBlog
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary btn-sm" href="#subscribe">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Welcome to ModernBlog</h1>
+            <p class="lead mb-4">Discover amazing stories, insights, and ideas from our community of writers</p>
+            <a href="#blog" class="btn btn-light btn-lg px-4 py-2">
+                <i class="bi bi-arrow-down me-2"></i>Explore Posts
+            </a>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="py-5" id="blog">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Latest Blog Posts</h2>
+                    <p class="lead text-muted">Stay updated with our latest articles and insights</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Blog Post 1 - Future of Web Development -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-e05foxcWiymIBq9Yq9ysIsgqz1XNYP.png" class="card-img-top" alt="Web Development - Person coding on laptop">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge badge-category">Technology</span>
+                            </div>
+                            <h5 class="card-title">The Future of Web Development</h5>
+                            <p class="card-text flex-grow-1">Explore the latest trends and technologies shaping the future of web development, from AI integration to progressive web apps.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>Dec 15, 2024
+                                </small>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    Read More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 - Digital Marketing -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-tvwrSDsblbGXNjiViLMOkM8xXV2MfS.png" class="card-img-top" alt="Digital Marketing - Letter tiles spelling Digital Marketing">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge badge-category">Marketing</span>
+                            </div>
+                            <h5 class="card-title">Digital Marketing Strategies That Work</h5>
+                            <p class="card-text flex-grow-1">Learn proven digital marketing strategies that can help your business grow and reach new audiences in today's competitive landscape.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>Dec 12, 2024
+                                </small>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    Read More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 - AI Revolution -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-kUzYQzOCQjRWORvoIvqUC72Rwupypv.png" class="card-img-top" alt="AI Revolution - AI chip on circuit board">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge badge-category">AI</span>
+                            </div>
+                            <h5 class="card-title">AI Revolution in Business</h5>
+                            <p class="card-text flex-grow-1">Discover how artificial intelligence is transforming businesses across industries and what it means for the future of work.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>Dec 10, 2024
+                                </small>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    Read More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 - Sustainable Living -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Aeh2zA485QxCMNPq2sC1RjVaU07m7T.png" class="card-img-top" alt="Sustainable Living - Motivational sign in forest">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge badge-category">Lifestyle</span>
+                            </div>
+                            <h5 class="card-title">Sustainable Living Guide</h5>
+                            <p class="card-text flex-grow-1">Simple yet effective ways to live more sustainably and reduce your environmental impact without compromising your lifestyle.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>Dec 8, 2024
+                                </small>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    Read More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 - Remote Work -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OZaJQF370jeIa42CxmvRGRiHIA37tV.png" class="card-img-top" alt="Remote Work - Person working on laptop with analytics">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge badge-category">Productivity</span>
+                            </div>
+                            <h5 class="card-title">Remote Work Best Practices</h5>
+                            <p class="card-text flex-grow-1">Master the art of remote work with these proven strategies for productivity, communication, and work-life balance.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>Dec 5, 2024
+                                </small>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    Read More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 - Cryptocurrency -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-tUiGnhbFdViismQHtctzvkkXPVXTmJ.png" class="card-img-top" alt="Cryptocurrency - Golden Bitcoin coin">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge badge-category">Finance</span>
+                            </div>
+                            <h5 class="card-title">Understanding Cryptocurrency</h5>
+                            <p class="card-text flex-grow-1">A beginner's guide to cryptocurrency and blockchain technology, covering the basics and investment considerations.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>Dec 3, 2024
+                                </small>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    Read More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-primary btn-lg px-5" id="loadMoreBtn">
+                        <i class="bi bi-plus-circle me-2"></i>Load More Posts
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 bg-light" id="subscribe">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="fw-bold mb-3">Stay Updated</h3>
+                    <p class="lead mb-4">Subscribe to our newsletter and never miss our latest articles</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="input-group input-group-lg">
+                                <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Email">
+                                <button class="btn btn-primary px-4" type="button">
+                                    <i class="bi bi-envelope me-2"></i>Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-journal-richtext me-2"></i>ModernBlog
+                    </h5>
+                    <p class="mb-3">Your go-to source for the latest insights in technology, business, and lifestyle. Join our community of readers and stay informed.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#blog" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Categories</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Technology</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Marketing</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Lifestyle</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Finance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="mb-2">
+                        <i class="bi bi-geo-alt me-2"></i>
+                        123 Blog Street, Digital City, DC 12345
+                    </p>
+                    <p class="mb-2">
+                        <i class="bi bi-envelope me-2"></i>
+                        hello@modernblog.com
+                    </p>
+                    <p class="mb-0">
+                        <i class="bi bi-phone me-2"></i>
+                        +1 (555) 123-4567
+                    </p>
+                </div>
+            </div>
+            
+            <hr class="my-4 opacity-25">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 ModernBlog. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
