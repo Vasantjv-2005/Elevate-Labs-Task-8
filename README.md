@@ -3,7 +3,7 @@
 > ✨ **The most stunning blog template that will absolutely shock your clients!** ✨
 
 
- # I have Used v0.dev and changpt to understand the task 
+ # I have Used v0.dev for making of website and chatgpt to understand the task 
 # At the below i am pasting the screenshot and video 
 
 ## 🎯 What Makes This Template Special?
